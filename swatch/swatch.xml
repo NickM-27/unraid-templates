@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>swatch</Name>
-  <Repository>crzynik/swatch:beta</Repository>
+  <Repository>crzynik/swatch:latest</Repository>
   <Registry>https://hub.docker.com/repository/docker/crzynik/swatch/general</Registry>
   <Network>bridge</Network>
   <MyIP/>
