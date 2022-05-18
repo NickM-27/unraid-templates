@@ -15,7 +15,7 @@ There is great object and face detection software out there, but sometimes AI de
 &#xD;
 Note: A config.yml file must exist in the config directory. See example here. See the documentation for more details.</Overview>
   <Category>HomeAutomation: Status:Stable</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:4500]</WebUI>
   <TemplateURL/>
   <Icon>https://user-images.githubusercontent.com/14866235/160284977-a9da849a-f80a-4d2b-90c9-e9c3e86a0bb2.png</Icon>
   <ExtraParams/>
