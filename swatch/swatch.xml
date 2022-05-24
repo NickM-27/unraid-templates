@@ -28,5 +28,6 @@ Note: A config.yml file must exist in the config directory. See example here. Se
   <Config Name="API" Target="4500" Default="4500" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4500</Config>
   <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/swatch" Mode="rw" Description="/mnt/user/appdata/swatch" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/swatch/</Config>
   <Config Name="Media Path" Target="/media/" Default="/mnt/user/media/swatch/" Mode="rw" Description="/mnt/user/media/swatch/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/swatch/</Config>
+  <Config Name="Database path" Target="/database/" Default="/mnt/user/database/swatch/" Mode="rw" Description="Path to swatch db" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/database/swatch/</Config>
   <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="/etc/localtime" Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
 </Container>
