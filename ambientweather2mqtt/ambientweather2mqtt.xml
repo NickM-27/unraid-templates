@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ambientweather2mqtt</Name>
+  <Repository>ghcr.io/neilenns/ambientweather2mqtt:latest</Repository>
+  <Registry>ghcr.io/neilenns/ambientweather2mqtt</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/neilenns/ambientweather2mqtt/issues</Support>
+  <Project>https://github.com/neilenns/ambientweather2mqtt</Project>
+  <Overview>This package listens for local data from Ambient Weather stations (such as the WS-2902C) and converts the incoming data to MQTT events. The sensor data is published with auto-discovery so they show up automatically as sensors in Home Assistant.&#xD;
+&#xD;
+The following Ambient Weather station models are confirmed to work:&#xD;
+&#xD;
+WS-2902C</Overview>
+  <Category>HomeAutomation: Tools: Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://brands.home-assistant.io/_/ambient_station/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1659568326</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="MQTT Server" Target="MQTT_SERVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.50.106:1883</Config>
+  <Config Name="MQTT_USERNAME" Target="MQTT_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">nickmowen</Config>
+  <Config Name="MQTT_PASSWORD" Target="MQTT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">@MQTTbrick8</Config>
+  <Config Name="Station Mac Address" Target="STATION_MAC_ADDRESS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">40:f5:20:0b:73:d7</Config>
+  <Config Name="Unauthorized" Target="MQTT_REJECT_UNAUTHORIZED" Default="false" Mode="" Description="Leave as-is unless you know what you are doing." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">America/Denver</Config>
+  <Config Name="Main Port" Target="PORT" Default="8132" Mode="" Description="The port this service runs on.&#13;&#10;&#13;&#10;If changing the port variable then this needs to be changed as well." Type="Variable" Display="always" Required="true" Mask="false">8132</Config>
+  <Config Name="Main Port Mapping" Target="8132" Default="8132" Mode="tcp" Description="The port that the weather station will point towards. " Type="Port" Display="always" Required="true" Mask="false">8132</Config>
+</Container>
