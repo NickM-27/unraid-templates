@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>go2rtc</Name>
+  <Repository>alexxit/go2rtc:latest</Repository>
+  <Registry>https://hub.docker.com/r/alexxit/go2rtc</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/AlexxIT/go2rtc/issues</Support>
+  <Project>https://github.com/AlexxIT/go2rtc</Project>
+  <Overview>Ultimate camera streaming application with support RTSP, WebRTC, HomeKit, FFmpeg, RTMP, etc.&#xD;
+&#xD;
+&#x2022; zero-dependency and zero-config small app for all OS (Windows, macOS, Linux, ARM)&#xD;
+&#x2022; zero-delay for many supported protocols (lowest possible streaming latency)&#xD;
+&#x2022; streaming from RTSP, RTMP, MJPEG, HLS/HTTP, USB Cameras and other sources&#xD;
+&#x2022; streaming to RTSP, WebRTC, MSE/MP4 or MJPEG&#xD;
+&#x2022; first project in the World with support streaming from HomeKit Cameras&#xD;
+&#x2022; on the fly transcoding for unsupported codecs via FFmpeg&#xD;
+&#x2022; multi-source 2-way codecs negotiation&#xD;
+&#x2022; mixing tracks from different sources to single stream&#xD;
+&#x2022; auto match client supported codecs&#xD;
+&#x2022; 2-way audio for ONVIF Profile T Cameras&#xD;
+&#x2022; streaming from private networks via Ngrok&#xD;
+&#x2022; can be integrated to any smart home platform or be used as standalone app&#xD;
+&#xD;
+Inspired by:&#xD;
+&#xD;
+&#x2022; series of streaming projects from @deepch&#xD;
+&#x2022; webrtc go library and whole @pion team&#xD;
+&#x2022; rtsp-simple-server idea from @aler9&#xD;
+&#x2022; GStreamer framework pipeline idea&#xD;
+&#x2022; MediaSoup framework routing idea&#xD;
+&#x2022; HomeKit Accessory Protocol from @brutella</Overview>
+  <Category>HomeAutomation: Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:1984]</WebUI>
+  <TemplateURL/>
+  <Icon>https://s12550.pcdn.co/wp-content/uploads/2015/09/WebRTC-icon-WB.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1664832747</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="config" Target="/config/go2rtc.yaml" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/go2rtc/go2rtc.yaml</Config>
+  <Config Name="localtime" Target="/etc/localtime" Default="/etc/localtime" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/etc/localtime</Config>
+</Container>
